@@ -7,10 +7,15 @@ const layout = () => {
     <div className="bg-gray-900 text-white p-5">
       <div className="flex justify-around md:justify-between w-full md:w-2/3 mx-auto">
         <div className="flex gap-3 my-auto">
-          <img src={Logo} alt="tailwindLogo" className="h-8 w-8" />
-          <h1 className="pr-5 text-2xl tracking-wider hidden md:inline-flex font-medium">
+          <Link to="/">
+            <img src={Logo} alt="tailwindLogo" className="h-8 w-8" />
+          </Link>
+          <Link
+            to="/"
+            className="pr-5 text-2xl tracking-wider hidden md:inline-flex font-medium"
+          >
             Bluewind
-          </h1>
+          </Link>
         </div>
 
         <ul className=" flex gap-4 my-auto">
